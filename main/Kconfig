@@ -1,0 +1,27 @@
+menu "Various WiFi Configuration"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "AWSWorkshop"
+        help
+            SSID (network name) for the example to connect to.
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "IoTP$AK1t"
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+
+            Can be left blank if the network has no security set.
+
+endmenu
+
+menu "AT6558 GPS Handling"
+
+     config TIMEZONE_MIN
+        int "Current timezone in minutes"
+        default 0
+        help
+            Which timezone should be used. Value defined in minutes from UTC.
+
+endmenu
